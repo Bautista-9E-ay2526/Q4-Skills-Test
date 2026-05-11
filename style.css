@@ -1,0 +1,78 @@
+/* DEMON SLAYER THEME */
+:root {
+    --ds-dark: #121212;
+    --ds-purple: #4b0082; /* Shinobu/Hashira Purple */
+    --ds-accent: #ff4500; /* Rengoku Flame */
+    --ds-gold: #ffd700;
+}
+
+body {
+    background-color: #1a1a1a;
+    background-image: url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+/* Login Box Styling */
+.login-container {
+    background: linear-gradient(145deg, #232323, #111111);
+    border-top: 4px solid var(--ds-purple);
+    border-bottom: 4px solid var(--ds-purple);
+    box-shadow: 0 0 20px rgba(75, 0, 130, 0.4);
+}
+
+/* Sidebar Styling (Tanjiro Green/Black Pattern) */
+#sidebar-ds {
+    background-color: whitesmoke !important; /* Forces background to white */
+    border-right: 1px solid #dee2e6; /* Adds a light grey border */
+    background-image: none; /* Removes any previous patterns */
+}
+
+/* Make the sidebar links dark so they are visible on white */
+#sidebar-ds a {
+    color: #333333 !important; 
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-weight: 500;
+}
+
+/* Add a hover effect for the links */
+#sidebar-ds a:hover {
+    background-color: gray;
+    color: #4b0082 !important; /* Hashira Purple on hover */
+    border-radius: 8px;
+}
+
+/* Make sure the logout button stays red */
+#sidebar-ds a.text-danger {
+    color: #dc3545 !important;
+}
+/* Card Styling */
+.card {
+    background: #252525 !important;
+    border: 1px solid #444 !important;
+    color: white !important;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 69, 0, 0.3); /* Flame hover effect */
+    border-color: var(--ds-accent) !important;
+}
+
+.card-title {
+    color: var(--ds-gold);
+}
+
+/* Common Image Sizing */
+img {
+    width: 130px;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.2));
+}
+
+.card-img-top {
+    height: 150px;
+    object-fit: cover;
+}
